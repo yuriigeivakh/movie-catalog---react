@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "movie-89fed",
+    "staging": "movie-89fed"
+  }
+}

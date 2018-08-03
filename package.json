@@ -1,0 +1,26 @@
+{
+  "name": "levelup",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://yuriigeivakh.github.io/Movie-react",
+  "dependencies": {
+    "gh-pages": "^1.2.0",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-overdrive": "0.0.10",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.4",
+    "styled-components": "^3.3.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -b master -d build",
+    "predeploy": "yarn run build"
+  },
+  "devDependencies": {
+    "eslint": "^5.2.0"
+  }
+}

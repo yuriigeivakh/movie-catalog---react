@@ -1,0 +1,169 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link, a:visited {
+  color: #fff;
+}
+
+#root {
+  background: #1A1423;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #0A0918;
+  height: 80px;
+  padding: 20px;
+  color: white;
+}
+
+.App-header a {
+  line-height: 80px;
+  font-size: 40px;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.img-wrapper {
+  width: 100vw;
+}
+
+.release-date {
+  color: #96705B;
+}
+
+.button {
+  cursor: pointer;
+  color: #684756;
+}
+
+.add-information {
+  color: #96705B;
+  font-weight: bold;
+}
+
+.fa-search {
+  font-size: 25px;
+  opacity: 0.2;
+}
+
+.input-find {
+  margin: 0 auto;
+}
+
+.movie {
+    border-radius: 5px;
+    transition: 1s all ease;
+}
+
+.movie:hover {
+    background: #fff;
+    color: #0A0918;
+}
+
+.wrapper-movie {
+    margin: 20px;
+}
+
+input {
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 80vw;
+  border: none;
+  border-bottom: 1px solid #684756;
+}
+input:focus { outline:none; }
+
+/* LABEL ======================================= */
+label                {
+  color: #999;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label        {
+  top: -20px;
+  font-size: 14px;
+  color: #684756;
+}
+
+.group {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%);
+  opacity: 0.8;
+}
+
+/* BOTTOM BARS ================================= */
+.bar    { position:relative; display:block; margin: 0 auto;}
+.bar:before, .bar:after     {
+  content:'';
+  height:2px;
+  width:0;
+  bottom:1px;
+  position:absolute;
+  background:#684756;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%;
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+@media only screen and (max-width: 768px) {
+  .App-header {
+    height: 40px;
+  }
+
+  .App-header a {
+    line-height: 40px;
+    font-size: 20px;
+  }
+}
+
+
